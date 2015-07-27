@@ -1,6 +1,12 @@
 <?php
 /**
- * @since 25/7/2015
+ * @since 25/7/2015 
+ * @category  PHP/cURL package 
+ * @author Abdul Ibrahim <shuman202@hotmail.com>
+ * @copyright 2015 Abdul Ibrahim
+ * @license http://opensource.org/licenses/MIT  The MIT License (MIT)
+ * @version 1.0
+ * @link http://www.abdulibrahim.com/ my home page
  */
 class Parse {
     
