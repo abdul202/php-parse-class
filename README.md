@@ -84,3 +84,18 @@ $parse = new Parse() ;
 $string = '<meta name="theme-color" content="#032A46"/>';
 $meta_attribute = $parse->getAttribute($string, "name");  // will return 'theme-color'
 ```
+### remove()
+Removes all text between <b>$open_tag</b> and <b>$close_tag</b> <br>
+string remove (string web page, string open_tag, string close_tag)
+Where
+<i><b>web_page </i></b>is the contents of the web page you want to affect
+<i><b>open_tag </i></b>defines the beginning of the text that you want to remove
+<i><b>close_tag </i></b>defines the end of the text you want to remove
+```php
+include 'parse.class.php';
+$parse = new Parse() ;
+$string = '<script>some javascript we want to remove</script>
+       and some text here we want to keep
+        ';
+$text_only = $parse->remove($string, '<script>', '</script>');  // will return 'and some html here we want to keep'
+```
