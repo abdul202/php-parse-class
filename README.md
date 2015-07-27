@@ -88,9 +88,9 @@ $meta_attribute = $parse->getAttribute($string, "name");  // will return 'theme-
 Removes all text between <b>$open_tag</b> and <b>$close_tag</b> <br>
 ```string remove (string web page, string open_tag, string close_tag)```
 <br>
-<i><b>web_page </i></b>is the contents of the web page you want to affect
-<i><b>open_tag </i></b>defines the beginning of the text that you want to remove
-<i><b>close_tag </i></b>defines the end of the text you want to remove
+<i><b>web_page </i></b>is the contents of the web page you want to affect <br>
+<i><b>open_tag </i></b>defines the beginning of the text that you want to remove <br>
+<i><b>close_tag </i></b>defines the end of the text you want to remove <br>
 ```php
 include 'parse.class.php';
 $parse = new Parse() ;
