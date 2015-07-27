@@ -7,12 +7,12 @@ before or after a delimiter term. This simple method can also be used to <br>
 return the text between two terms.<br>
 string splitStrin (string unparsed, string delimiter, BEFORE/AFTER, INCL/EXCL)<br>
 Where<br>
-<i>unparsed</i> is the string to parse<br>
-<i>delimiter</i> defines boundary between substring you want and substring you don't want<br>
-<i>BEFORE</i> indicates that you want what is before the delimiter<br>
-<i>AFTER</i> indicates that you want what is after the delimiter<br>
-<i>INCL</i> indicates that you want to include the delimiter in the parsed text<br>
-<i>EXCL</i> indicates that you don't want to include the delimiter in the parsed text<br>
+<i><b>unparsed</i><b> is the string to parse<br>
+<i><b>delimiter</i><b> defines boundary between substring you want and substring you don't want<br>
+<i><b>BEFORE</i><b> indicates that you want what is before the delimiter<br>
+<i><b>AFTER</i><b> indicates that you want what is after the delimiter<br>
+<i><b>INCL</i><b> indicates that you want to include the delimiter in the parsed text<br>
+<i><b>EXCL</i><b> indicates that you don't want to include the delimiter in the parsed text<br>
 
 ```php
 include 'parse.class.php';
@@ -31,10 +31,10 @@ to define a particular part of a string
 
 string return_between (string unparsed, string start, string end, INCL/EXCL)
 Where <br>
-<i>unparsed</i> is the string to parse<br>
-<i>start</i> identifies the starting delimiter<br>
-<i>end</i> identifies the ending delimiter<br>
-<i>INCL</i> indicates that you want to include the delimiters in the parsed text<br>
-<i>EXCL</i> indicates that you don't want to include delimiters in the parsed text<br>
+<i><b>unparsed</i><b> is the string to parse<br>
+<i><b>start</i><b> identifies the starting delimiter<br>
+<i><b>end</i><b> identifies the ending delimiter<br>
+<i><b>INCL</i><b> indicates that you want to include the delimiters in the parsed text<br>
+<i><b>EXCL</i><b> indicates that you don't want to include delimiters in the parsed text<br>
 
 
