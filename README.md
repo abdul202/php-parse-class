@@ -36,5 +36,12 @@ Where <br>
 <i><b>end</i></b> identifies the ending delimiter<br>
 <i><b>INCL</i></b> indicates that you want to include the delimiters in the parsed text<br>
 <i><b>EXCL</i></b> indicates that you don't want to include delimiters in the parsed text<br>
-
+```php
+include 'parse.class.php';
+$parse = new Parse() ;
+$string = "i made this is my cool class";
+# Parse what's before the delimiter, including the delimiter
+$parsed_text = $parse->returnBetween($string, "my", 'class', 'EXCL'); // will return cool
+$parsed_text = $parse->returnBetween($string, "my", 'class', 'INCL'); // will return my cool class
+```
 
