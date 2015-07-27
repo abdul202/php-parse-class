@@ -6,7 +6,7 @@ The simplest parsing method returns a string that contains everything <br>
 before or after a delimiter term. This simple method can also be used to <br>
 return the text between two terms.<br>
 ```string splitStrin (string unparsed, string delimiter, BEFORE/AFTER, INCL/EXCL)```
-Where<br>
+<br>
 <i><b>unparsed</i></b> is the string to parse<br>
 <i><b>delimiter</i></b> defines boundary between substring you want and substring you don't want<br>
 <i><b>BEFORE</i></b> indicates that you want what is before the delimiter<br>
@@ -29,8 +29,8 @@ $parsed_text = $parse->splitString($string, "my", 'AFTER', 'EXCL');
 This method uses a start delimiter and an end delimiter
 to define a particular part of a string
 
-string return_between (string unparsed, string start, string end, INCL/EXCL)
-Where <br>
+```string return_between (string unparsed, string start, string end, INCL/EXCL)```
+ <br>
 <i><b>unparsed</i></b> is the string to parse<br>
 <i><b>start</i></b> identifies the starting delimiter<br>
 <i><b>end</i></b> identifies the ending delimiter<br>
@@ -47,8 +47,8 @@ $parsed_text = $parse->returnBetween($string, "my", 'class', 'INCL'); // will re
 ### parseArray()
 This method is usful for returning an array that contains <br>     
 links, images, tables or any other data that appears more than once. <br>
-array return_array (string unparsed, string beg, string end)
-Where <br>
+```array return_array (string unparsed, string beg, string end)```
+<br>
 <i><b>unparsed </i></b>is the string to parse <br>
 <i><b>beg </i></b> is a reoccurring beginning delimiter <br>
 <i><b>end </i></b> is a reoccurring ending delimiter <br>
@@ -86,8 +86,8 @@ $meta_attribute = $parse->getAttribute($string, "name");  // will return 'theme-
 ```
 ### remove()
 Removes all text between <b>$open_tag</b> and <b>$close_tag</b> <br>
-string remove (string web page, string open_tag, string close_tag)
-Where
+```string remove (string web page, string open_tag, string close_tag)```
+<br>
 <i><b>web_page </i></b>is the contents of the web page you want to affect
 <i><b>open_tag </i></b>defines the beginning of the text that you want to remove
 <i><b>close_tag </i></b>defines the end of the text you want to remove
