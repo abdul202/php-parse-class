@@ -44,4 +44,13 @@ $string = "i made this is my cool class";
 $parsed_text = $parse->returnBetween($string, "my", 'class', 'EXCL'); // will return cool
 $parsed_text = $parse->returnBetween($string, "my", 'class', 'INCL'); // will return my cool class
 ```
+### parseArray()
+This method is usful for returning an array that contains <br>     
+links, images, tables or any other data that appears more than once. <br>
+array return_array (string unparsed, string beg, string end)
+Where <br>
+<i><b>unparsed </i></b>is the string to parse <br>
+<i><b>beg </i></b> is a reoccurring beginning delimiter <br>
+<i><b>end </i></b> is a reoccurring ending delimiter <br>
+<i><b>array </i></b> contains every occurrence of what's found between beginning and end. <br>
 
