@@ -26,9 +26,7 @@ $parsed_text = $parse->splitString($string, "my", 'AFTER', 'EXCL');
 // $parsed_text = "cool class"
 ```
 ### returnBetween()
-This method uses a start delimiter and an end delimiter
-to define a particular part of a string
-
+This method uses a start delimiter and an end delimiter to define a particular part of a string
 ```string return_between (string unparsed, string start, string end, INCL/EXCL)```
  <br>
 <i><b>unparsed</i></b> is the string to parse<br>
@@ -45,8 +43,7 @@ $parsed_text = $parse->returnBetween($string, "my", 'class', 'EXCL'); // will re
 $parsed_text = $parse->returnBetween($string, "my", 'class', 'INCL'); // will return my cool class
 ```
 ### parseArray()
-This method is usful for returning an array that contains <br>     
-links, images, tables or any other data that appears more than once. <br>
+This method is usful for returning an array that contains links, images, tables or any other data that appears more than once. <br>
 ```array return_array (string unparsed, string beg, string end)```
 <br>
 <i><b>unparsed </i></b>is the string to parse <br>
