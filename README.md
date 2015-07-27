@@ -82,5 +82,5 @@ provides an interface that allows webbot developers to parse specific attribute 
 include 'parse.class.php';
 $parse = new Parse() ;
 $string = '<meta name="theme-color" content="#032A46"/>';
-$meta_attribute = $parse->getAttribute($string, "name");  // will return this 'theme-color'
+$meta_attribute = $parse->getAttribute($string, "name");  // will return 'theme-color'
 ```
