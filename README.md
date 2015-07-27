@@ -53,4 +53,26 @@ Where <br>
 <i><b>beg </i></b> is a reoccurring beginning delimiter <br>
 <i><b>end </i></b> is a reoccurring ending delimiter <br>
 <i><b>array </i></b> contains every occurrence of what's found between beginning and end. <br>
+```php
+include 'parse.class.php';
+$parse = new Parse() ;
 
+$string = '
+<meta name="theme-color" content="#032A46"/>
+<meta name="msapplication-TileColor" content="#032A46"/>
+<meta name="msapplication-TileImage" content="/images/logo/np-icon/144x144.png"/>
+<link rel="canonical" href="https://www.site.com/"/>
+<link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+';
+$meta_tag_array = $parse->parseArray($string, "<meta", ">");
+foreach ($meta_tag_array as $mets_tag) {
+    echo $mets_tag."\n";
+}
+```
+This code will return only meta tags like this <br>
+```html
+
+<meta name="theme-color" content="#032A46"/>
+<meta name="msapplication-TileColor" content="#032A46"/>
+<meta name="msapplication-TileImage" content="/images/logo/np-icon/144x144.png"/>
+```
