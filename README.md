@@ -76,3 +76,11 @@ This code will return only meta tags like this <br>
 <meta name="msapplication-TileColor" content="#032A46"/>
 <meta name="msapplication-TileImage" content="/images/logo/np-icon/144x144.png"/>
 ```
+### getAttribute()
+provides an interface that allows webbot developers to parse specific attribute values from HTML tags.
+```php
+include 'parse.class.php';
+$parse = new Parse() ;
+$string = '<meta name="theme-color" content="#032A46"/>';
+$meta_attribute = $parse->getAttribute($string, "name");  // will return this 'theme-color'
+```
