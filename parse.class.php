@@ -70,7 +70,7 @@ class Parse {
         
         }
     /**
-    *    This function is usful for returning an array that contains     
+    *    This method is usful for returning an array that contains     
     *    links, images, tables or any other data that appears more than once.    
     * @param string $string    String that contains the tags
     * @param string $beg_tag   Name of the open tag (i.e. "<a>") 
@@ -82,7 +82,7 @@ class Parse {
         return $matching_data[0];
     }
     /**
-     * 
+     * provides an interface that allows webbot developers to parse specific attribute values from HTML tags.
      * @param string $tag The tag that contains the attribute (i.e. <img src="img.gif" /> )
      * @param string $attribute  The name of the attribute, whose value you seek  (i.e. src )
      * @return string  the value of an attribute in a given tag.
